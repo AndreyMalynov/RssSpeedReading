@@ -1,0 +1,147 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top headroom">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- Button for smallest screens -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="">RssSpeedReading</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav pull-right">
+                <li><a class="btn" href="">SIGN IN / SIGN UP</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+<!-- /.navbar -->
+<!-- Header -->
+<header id="head">
+    <div class="container">
+        <div class="row">
+            <h1 class="lead">хз зачем это, но мб кому-то интересным покажется)</h1>
+        </div>
+    </div>
+</header>
+<!-- /Header -->
+<!-- Intro -->
+<div class="container text-center">
+    <br> <br>
+    <h2 class="thin">немного общей инфы</h2>
+    <p class="text-muted">
+        Сайт позволит использовать режим скорочтения для чтения новостей.
+        Новости не содержат сложных терминов, они идеально подходят для данной методики        
+    </p>
+</div>
+<!-- /Intro-->
+<!-- Highlights - jumbotron -->
+<div class="jumbotron top-space">
+    <div class="container">
+
+        <h3 class="text-center thin">Причины использовать RssSpeedReading</h3>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 highlight">
+                <div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Работает под все устройства</h4></div>
+                <div class="h-body text-center">
+                    <p>это не точно)</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 highlight">
+                <div class="h-caption"><h4><i class="fa fa-flash fa-5"></i>Читайте новости быстро</h4></div>
+            </div>
+            <div class="col-md-3 col-sm-6 highlight">
+                <div class="h-caption"><h4><i class="fa fa-heart fa-5"></i>доступ к любимым агентствам новостей</h4></div>
+            </div>
+            <div class="col-md-3 col-sm-6 highlight">
+                <div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>личный аккаунт</h4></div>
+
+            </div>
+        </div> <!-- /row  -->
+
+    </div>
+</div>
+<!-- /Highlights -->
+<!-- container -->
+<div class="container">
+
+    <h2 class="text-center top-space">Попробуй:)</h2>
+    <br>
+
+    <div class="jumbotron top-space" >
+        <h4 id="text">
+            НОВО-ОГАРЕВО, 17 февраля. Темпы инфляции в РФ продолжают снижаться, в феврале этот показатель в годовом выражении
+            оказался ниже 5%. Об этом заявил президент РФ Владимир Путин на совещании по экономическим вопросам."В этом году устойчивое снижение
+            инфляции продолжается, в феврале этого года показатель в годовом выражении пробил психологическую отметку в 5%, стал ниже,
+            на 13 февраля это уже 4,72%", - сказал глава государства
+        </h4>
+        <p class="text-right"><a class="btn btn-primary btn-large" id="fastreader-init">Начать</a></p>
+    </div>
+
+</div>	<!-- /container -->
+
+<section id="social">
+    <div class="container">
+        <div class="wrapper clearfix">
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style">
+                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                <a class="addthis_button_tweet"></a>
+                <a class="addthis_button_linkedin_counter"></a>
+                <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+            </div>
+            <!-- AddThis Button END -->
+        </div>
+    </div>
+</section>
+<!-- /social links -->
+
+
+<footer id="footer" class="top-space">
+
+    <div class="footer2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 widget">
+                    <div class="widget-body">
+                        <p class="simplenav">
+                            <a href="">мифи дерьмо</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 widget">
+                    <div class="widget-body">
+                        <p class="text-right">
+                            Copyright &copy; 2017, хотя, можете копировать)
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- /row of widgets -->
+        </div>
+    </div>
+
+</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+@section scripts
+{
+<script>
+    $(document).ready(function () {
+        $("#fastreader-init").click(function () {
+            $("#text").fastreader();
+        });
+    });
+</script>
+}
+
+

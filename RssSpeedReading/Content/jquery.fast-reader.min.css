@@ -28,6 +28,7 @@ div#fast-reader-overlay
 }
 #fast-reader-text
 {
+    cursor: pointer;
 	border: 3px solid #A8A7A7;
 	border-left: none;
 	border-right: none;
@@ -39,10 +40,13 @@ div#fast-reader-overlay
 }
 #fast-reader-text .invisible
 {
+
 	visibility:hidden;
 }
 #fast-reader-buttons 
 {  
+    position: absolute;
+    right: 25%;
 	font-size: 20px;
 	display: inline-block;
 	vertical-align: middle;
